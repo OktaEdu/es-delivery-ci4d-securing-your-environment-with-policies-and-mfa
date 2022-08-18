@@ -6,7 +6,7 @@ This repo contains everything you need to complete the labs in this module:
 
 - Lab 7-1: Configure MFA with Two Factor Types
 - Lab 7-2: Configure Passwordless Authentication
-- Lab 7-3: Enable and configure Self-service Recovery
+- Lab 7-3: Enable and Configure Self-Service Recovery
 
 
 ## How to Use

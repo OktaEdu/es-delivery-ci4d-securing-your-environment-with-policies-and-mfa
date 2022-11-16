@@ -15,6 +15,10 @@
       "description": "## Enable the Authentication and Recovery Options\n\n1.In the Admin menu, go to `Security` > `Authenticators`\n\n2. Click the  `Actions` drop-down in the  **Email** row of the list of authenticators.\n\n3. Click `Edit`\n\n4. In the **Used for** section, select  `Authentication and recovery` \n\n5. Click `Save`\n\nThis means that email can now be used as an authenticator and not just for account recovery. We'll still need to configure a Sign On policy to use email as an authenticator."
     },
     {
+      "title": "Disable Unused Authenticators",
+      "description": "## Disable Unused Authenticators\n\nFor the purposes of this class, we'll only be using the Password and Email (Magic Link) authenticators. So, let's disable the ones we aren't using.\n\n1. On the Authenticators page, click on the `Enrollment` tab.\n2. Click the `Edit` button.\n3. Change **Okta Verify** to `Disabled`\n4. Change **Phone** to `Disabled`\n5. **Email** should be `Optional` and **Password** should be `Required`"
+    },
+    {
       "title": "Configure the Email Magic Link Sign On Policy",
       "description": "## Configure the Email Magic Link Sign On Policy\n\n1. Ensure you are logged in to the Admin Dashboard as `oktatraining`\n\n2. In the Admin menu, go to `Security` > `Authentication Policies`\n\n3. Click `Add a Policy`\n\n4. Name the policy `Email Magic Link`\n\n5. Click `Save`\n\n6. Click `Add Rule`\n\n7. Name the rule `Customers Email Magic Link Rule`\n\n8. Next to **User's group membership includes**, click the drop-down and \nselect `At least one of the following groups`\n\n9. In the `Enter groups to include` field that pops up below, search for and \nselect the `Customers` group\n\n10. Next to **User must authenticate with**, select `Any 1 factor type` from the drop-down.\n\n11. Next to **Possession factor constraints are**, uncheck `Exclude phone and email authenticators`\n\n12. Click `Save`"
     },

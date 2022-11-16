@@ -1,0 +1,10 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "#3 - Lab 7.3 Enable and Configure Self-Service Account Recovery",
+  "steps": [
+    {
+      "title": "Lab Overview",
+      "description": "## Lab 7.3: Enable and Configure Self-Service Account Recovery\n\n 🎯 **Objective**    Enable and configure self-service account recovery.\n\n  🎬 **Scenario**    Okta Ice would like to allow their customers to be able to recover their account without having to contact an administrator.\n  \n  ⏱️ **Duration**    15 minutes\n"
+    }
+  ]
+}

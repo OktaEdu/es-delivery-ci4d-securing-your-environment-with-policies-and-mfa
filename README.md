@@ -4,28 +4,14 @@
 
 This repo contains everything you need to complete the labs in this module:
 
-- Lab 7-1: Configure MFA with Two Factor Types
-- Lab 7-2: Configure Passwordless Authentication
-- Lab 7-3: Enable and Configure Self-Service Recovery
+- Lab 7.1: Configure Passwordless Authentication with Email Magic Link
+- Lab 7.2: Configure MFA with Two Factor Types
+- Lab 7.3: Enable and Configure Self-Service Recovery
+
+## How to Start the Labs
 
 
-## How to Use
-
-1. Clone this codebase: 
-```
-git clone https://github.com/OktaEdu/es-delivery-ci4d-securing-your-environment-with-policies-and-mfa
-
-```
-2. Navigate to your local repo: 
-```
-cd /es-delivery-ci4d-securing-your-environment-with-policies-and-mfa
-
-```
-3. Open in VSCode: 
-```
-code .
-```
-4. The CodeTour for Lab 7.1 will open automatically. If it doesn't, press the `Start Tour` button.
+These labs are guided by a VSCode plugin called CodeTour. To start Lab 7.1, first expand the **CODETOUR** tab on the lefthand side of VSCode. Then press the ![Start Tour](./.tour-resources/play.png) button next to Lab 7.1.
 
 ![Start Code Tour](./.tour-resources/start-tour.gif)
 

@@ -24,7 +24,7 @@
     },
     {
       "title": "Lab Checkpoint",
-      "description": "## ✅ Checkpoint\n\nAt this point, you have configured and enabled MFA using two authentication factors -- Knowledge (password) and Possession (email) You have done this by creating a Sign On Policy that specifies that any user in the Franchisee group must sign in with a password and an additional factor. Since this policy was applied to the Franchisee CRM app, any Franchisee must authenticate with a password and an additional factor. Since we've only configured email as an additional factor, that is the only other factor available in this case."
+      "description": "## ✅ Checkpoint\n\nAt this point, you have configured and enabled MFA using two authentication factors -- Knowledge (password) and Possession (email) You have done this by creating a Sign On Policy that specifies that any user in the Franchisee group must sign in with a password and an additional factor. Since this policy was applied to the Franchisee CRM app, any Franchisee must authenticate with a password and an additional factor. Since we've only configured email as an additional factor, that is the only other factor available in this case.\n\n## 🎉 End of Module 7 Labs\n\n**You may close this workspace project, ensuring all changes were saved.**"
     }
   ]
 }

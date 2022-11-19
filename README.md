@@ -6,7 +6,6 @@ This repo contains everything you need to complete the labs in this module:
 
 - Lab 7.1: Configure Passwordless Authentication with Email Magic Link
 - Lab 7.2: Configure MFA with Two Factor Types
-- Lab 7.3: Enable and Configure Self-Service Recovery
 
 ## How to Start the Labs
 

@@ -8,7 +8,7 @@
     },
     {
       "title": "Import And Run Your Previously Configured Web Apps",
-      "description": "## Import And Run Your Previously Configured Web Apps\n\nWe will now copy the web applications we previously configured to this workspace, so that we can test out passwordless authentication and, later, multifactor authentication and self-service account recovery.\n\n1. Click [here to copy the previously configured applications](command:codetour.sendTextToTerminal?[\"mkdir redirect; mkdir embedded; cp ../03-exploring-authentication-protocol-flows/redirect/* redirect; cp ../03-exploring-authentication-protocol-flows/* embedded\"]).\n\n2. Click [here to launch the web server](command:codetour.sendTextToTerminal?[\"python -m http.server 8080\"])."
+      "description": "## Import And Run Your Previously Configured Web Apps\n\nWe will now copy the web applications we previously configured to this workspace, so that we can test out passwordless authentication and, later, multifactor authentication and self-service account recovery.\n\n1. Click [here to copy the previously configured applications](command:codetour.sendTextToTerminal?[\"mkdir redirect; mkdir embedded; cp ../03-exploring-authentication-protocol-flows/redirect/* redirect; cp ../03-exploring-authentication-protocol-flows/embedded/* embedded\"]).\n\n2. Click [here to launch the web server](command:codetour.sendTextToTerminal?[\"python -m http.server 8080\"])."
     },
     {
       "title": "Enable the Authentication and Recovery Options",

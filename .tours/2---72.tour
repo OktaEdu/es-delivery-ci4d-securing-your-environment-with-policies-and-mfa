@@ -12,7 +12,7 @@
     },
     {
       "title": "Create the Franchisee Two Factor Okta Sign-On Policy",
-      "description": "## Create the Franchisee Two Factor Okta Sign-On Policy\n1. In the Admin menu, go to `Security` > `Okta Sign-On Policy`.\n2. Click `Add a Policy`\n3. Name the policy `Franchisee Two Factor`\n4. Click `Save`\n5. Click `Add Rule`\n6. Name the rule `Franchisee Two Factor Rule`\n7. Next to **User's group membership includes**, click the drop-down and \nselect `At least one of the following groups`\n8. In the `Enter groups to include` field that pops up below, search for and \nselect the `Franchisees` group\n\n9. Next to **User must authenticate with**, select `Password + Another factor` from the drop-down.\n\n10. Next to **Possession factor constraints are**, uncheck `Exclude phone and email authenticators`\n\n11. Click `Save`"
+      "description": "## Create the Franchisee Two Factor Okta Sign-On Policy\n1. In the Admin menu, go to `Security` > `Authentication Policies`.\n2. Click `Add a Policy`\n3. Name the policy `Franchisee Two Factor`\n4. Click `Save`\n5. Click `Add Rule`\n6. Name the rule `Franchisee Two Factor Rule`\n7. Next to **User's group membership includes**, click the drop-down and \nselect `At least one of the following groups`\n8. In the `Enter groups to include` field that pops up below, search for and \nselect the `Franchisees` group\n\n9. Next to **User must authenticate with**, select `Password + Another factor` from the drop-down.\n\n10. Next to **Possession factor constraints are**, uncheck `Exclude phone and email authenticators`\n\n11. Click `Save`"
     },
     {
       "title": "Configure Franchisee CRM App to Use Two Factor Sign On Policy",

@@ -16,7 +16,7 @@
     },
     {
       "title": "Disable Unused Authenticators",
-      "description": "## Disable Unused Authenticators\n\nFor the purposes of this class, we'll only be using the Password and Email (Magic Link) authenticators. So, let's disable the ones we aren't using.\n\n1. On the Authenticators page, click on the `Enrollment` tab.\n2. Click the `Edit` button.\n3. Change **Okta Verify** to `Disabled`\n4. Change **Phone** to `Disabled`\n5. **Email** should be `Optional` and **Password** should be `Required`"
+      "description": "## Disable Unused Authenticators\n\nFor the purposes of this class, we'll only be using the Password and Email (Magic Link) authenticators. So, let's disable the ones we aren't using.\n\n1. On the Authenticators page, click on the `Enrollment` tab.\n2. Click the `Edit` button.\n3. Change **Okta Verify** to `Disabled`\n4. Change **Phone** to `Disabled`\n5. **Email** should be `Optional` and **Password** should be `Required`\n6. Click `Update policy` button"
     },
     {
       "title": "Configure the Email Magic Link Sign On Policy",

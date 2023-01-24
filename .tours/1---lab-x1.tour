@@ -4,7 +4,7 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 7.1 Configure Passwordless Authentication with Email Magic Link\n\n 🎯 **Objective**    Configure passwordless authentication with Email Magic Link\n\n  🎬 **Scenario**    Okta Ice would like to provide customers with the option of using a passwordless method of authentication when accessing the Rewards and Polling apps.\n\n  ⏱️ **Duration**    15 minutes"
+      "description": "## Lab 7.1 Configure Passwordless Authentication with Email Magic Link\n\n 🎯 **Objective**    Configure passwordless authentication with Email Magic Link\n\n  🎬 **Scenario**    Okta Ice would like to provide customers with the option of using a passwordless method of authentication when accessing the Rewards and Polling apps.\n\n  ⏱️ **Duration**    15 minutes\n\n  ⚠️ **Prerequisites:** Labs 1.4, 2.4, and 3.1"
     },
     {
       "title": "Import And Run Your Previously Configured Web Apps",
@@ -20,15 +20,15 @@
     },
     {
       "title": "Configure the Email Magic Link Sign On Policy",
-      "description": "## Configure the Email Magic Link Sign On Policy\n\n1. Ensure you are logged in to the Admin Dashboard as `oktatraining`\n\n2. In the Admin menu, go to `Security` > `Authentication Policies`\n\n3. Click `Add a Policy`\n\n4. Name the policy `Email Magic Link`\n\n5. Click `Save`\n\n6. Click `Add Rule`\n\n7. Name the rule `Customers Email Magic Link Rule`\n\n8. Next to **User's group membership includes**, click the drop-down and \nselect `At least one of the following groups`\n\n9. In the `Enter groups to include` field that pops up below, search for and \nselect the `Customers` group\n\n10. Next to **User must authenticate with**, select `Any 1 factor type` from the drop-down.\n\n11. Next to **Possession factor constraints are**, uncheck `Exclude phone and email authenticators`\n\n12. Click `Save`"
+      "description": "## Configure the Email Magic Link Authentication Policy\n\n1. Ensure you are logged in to the Admin Dashboard as `oktatraining`\n\n2. In the Admin menu, go to `Security` > `Authentication Policies`\n\n3. Click `Add a Policy`\n\n4. Name the policy `Email Magic Link`\n\n5. Click `Save`\n\n6. Click `Add Rule`\n\n7. Name the rule `Customers Email Magic Link Rule`\n\n8. Next to **User's group membership includes**, click the drop-down and \nselect `At least one of the following groups`\n\n9. In the `Enter groups to include` field that pops up below, search for and \nselect the `Customers` group\n\n10. Next to **User must authenticate with**, select `Any 1 factor type` from the drop-down.\n\n11. Next to **Possession factor constraints are**, uncheck `Exclude phone and email authenticators`\n\n12. Click `Save`"
     },
     {
-      "title": "Configure Customer Apps to Use the Email Magic Link Sign On Policy",
-      "description": "## Configure Customer Apps to Use the Email Magic Link Sign On Policy\n\n1. Back on the `Email Magic Link` policy page, click the `Applications` tab.\n\n2. Click `Add App`\n\n3. Click the `Add` button next to `Customer Rewards App`\n\n4. Click the `Add` button next to `Customer Polling App`\n\n5. Click `Close`\n\n6. Log out of Okta."
+      "title": "Configure Customer Apps to Use the Email Magic Link Authentication Policy",
+      "description": "## Configure Customer Apps to Use the Email Magic Link Authentication Policy\n\n1. Back on the `Email Magic Link` policy page, click the `Applications` tab.\n\n2. Click `Add App`\n\n3. Click the `Add` button next to `Customer Rewards App`\n\n4. Click the `Add` button next to `Customer Polling App`\n\n5. Click `Close`\n\n6. Log out of Okta."
     },
     {
-      "title": "Test the Email Magic Link Sign On Policy",
-      "description": "## Test the Email Magic Link Sign On Policy\n\n1. Navigate to http://localhost:8080\n2. Click on `Rewards App (Redirect)`\n3. Enter the username `testuser`, which was previously registered with your personal email address in Module 5.\n4. You now have the choice to authenticate with Email or Password. Click `Email`\n5. Click `Send me an email`\n6. Click `Enter a verification code instead`\n7. Check your personal email for an email from your Okta Org and copy the numeric code into the `Enter Code` field\n8. Click `Verify` and you will be logged in to the Customer Rewards application!\n9. Click `Close Okta Session`\n10. Click `Return to Portal`\n\n📝 **Note**: In order for the clickable Email Magic Link to work, the link must be clicked in the same device that the authentication process was initiated. Since we're using a VM and you are likely checking your email on a personal device, we circumvent this by using the verification code instead."
+      "title": "Test the Email Magic Link Authentication Policy",
+      "description": "## Test the Email Magic Link Authentication Policy\n\n1. Navigate to http://localhost:8080\n2. Click on `Rewards App (Redirect)`\n3. Enter the username `testuser`, which was previously registered with your personal email address in Module 5.\n4. You now have the choice to authenticate with Email or Password. Click `Email`\n5. Click `Send me an email`\n6. Click `Enter a verification code instead`\n7. Check your personal email for an email from your Okta Org and copy the numeric code into the `Enter Code` field\n8. Click `Verify` and you will be logged in to the Customer Rewards application!\n9. Click `Close Okta Session`\n10. Click `Return to Portal`\n\n📝 **Note**: In order for the clickable Email Magic Link to work, the link must be clicked in the same device that the authentication process was initiated. Since we're using a VM and you are likely checking your email on a personal device, we circumvent this by using the verification code instead."
     },
     {
       "title": "Lab Checkpoint",

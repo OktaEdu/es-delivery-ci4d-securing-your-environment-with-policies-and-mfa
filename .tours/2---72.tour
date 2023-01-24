@@ -4,23 +4,23 @@
   "steps": [
     {
       "title": "Lab Overview",
-      "description": "## Lab 7.2: Configure MFA with Two Factor Types\n\n 🎯 **Objective**    Configure multifactor authentication (MFA) with two factor types.\n\n  🎬 **Scenario**    Okta Ice would like to secure the Franchisee CRM application with MFA. They'd like to require franchisees to authenticate with a knowledge factor (password) and a possession factor (email).\n\n  ⏱️ **Duration**    15 minutes\n"
+      "description": "## Lab 7.2: Configure MFA with Two Factor Types\n\n 🎯 **Objective**    Configure multifactor authentication (MFA) with two factor types.\n\n  🎬 **Scenario**    Okta Ice would like to secure the Franchisee CRM application with MFA. They'd like to require franchisees to authenticate with a knowledge factor (password) and a possession factor (email).\n\n  ⏱️ **Duration**    15 minutes\n\n  ⚠️ **Prerequisites:** Labs 1.2-1.4, 2.4, 3.1, and 3.2\n"
     },
     {
       "title": " Make Yourself a Franchisee",
       "description": "## Make Yourself a Franchisee\n\n1. Log in to your Okta org as `oktatraining` and access the Admin dashboard.\n\n2. From the Admin menu, select `Directory` > `People`\n3. Click on `Kay West`\n4. Click on `Profile`\n5. Click `Edit`\n6. Update the **Primary email** to your personal email address\n7. Click `Save`"
     },
     {
-      "title": "Create the Franchisee Two Factor Okta Sign-On Policy",
-      "description": "## Create the Franchisee Two Factor Okta Sign-On Policy\n1. In the Admin menu, go to `Security` > `Authentication Policies`.\n2. Click `Add a Policy`\n3. Name the policy `Franchisee Two Factor`\n4. Click `Save`\n5. Click `Add Rule`\n6. Name the rule `Franchisee Two Factor Rule`\n7. Next to **User's group membership includes**, click the drop-down and \nselect `At least one of the following groups`\n8. In the `Enter groups to include` field that pops up below, search for and \nselect the `Franchisees` group\n\n9. Next to **User must authenticate with**, select `Password + Another factor` from the drop-down.\n\n10. Next to **Possession factor constraints are**, uncheck `Exclude phone and email authenticators`\n\n11. Click `Save`"
+      "title": "Create the Franchisee Two Factor Okta Authentication Policy",
+      "description": "## Create the Franchisee Two Factor Okta Authentication Policy\n1. In the Admin menu, go to `Security` > `Authentication Policies`.\n2. Click `Add a Policy`\n3. Name the policy `Franchisee Two Factor`\n4. Click `Save`\n5. Click `Add Rule`\n6. Name the rule `Franchisee Two Factor Rule`\n7. Next to **User's group membership includes**, click the drop-down and \nselect `At least one of the following groups`\n8. In the `Enter groups to include` field that pops up below, search for and \nselect the `Franchisees` group\n\n9. Next to **User must authenticate with**, select `Password + Another factor` from the drop-down.\n\n10. Next to **Possession factor constraints are**, uncheck `Exclude phone and email authenticators`\n\n11. Click `Save`"
     },
     {
-      "title": "Configure Franchisee CRM App to Use Two Factor Sign On Policy",
-      "description": "## Configure Franchisee CRM App to Use Two Factor Sign On Policy\n\n1. Back on the `Franchisee Two Factor` policy page, click the `Applications` tab.\n\n2. Click `Add App`\n\n3. Click the `Add` button next to `Franchisee CRM App`\n\n4. Click `Close`\n\n5. Log out of Okta."
+      "title": "Configure Franchisee CRM App to Use Two Factor Authentication Policy",
+      "description": "## Configure Franchisee CRM App to Use Two Factor Authentication Policy\n\n1. Back on the `Franchisee Two Factor` policy page, click the `Applications` tab.\n\n2. Click `Add App`\n\n3. Click the `Add` button next to `Franchisee CRM App`\n\n4. Click `Close`\n\n5. Log out of Okta."
     },
     {
-      "title": "Test the Two Factor Sign On Policy",
-      "description": "## Test the Two Factor Sign On Policy\n\n1. Navigate to http://localhost:8080\n2. Click on `CRM App (Redirect)`\n3. Enter the **Username** `kay.west@oktaice.com` and click `Next`\n4. Enter the **Password** `Tra!nme4321!` and click `Verify`\n5. You are now prompted for a email as a second factor of authentication.\n6. Click `Send me an email`\n7. Click `Enter a verification code instead`\n8. Check your personal email for an email from your Okta Org and copy the numeric code into the `Enter Code` field\n9. Click `Verify` and you will be logged in to the Customer Rewards application!\n10. Click `Close Okta Session`\n11. Click `Return to Portal`\n\n📝 **Note**: In order for the clickable Email Magic Link to work, the link must be clicked in the same device that the authentication process was initiated. Since we're using a VM and you are likely checking your email on a personal device, we circumvent this by using the verification code instead."
+      "title": "Test the Two Factor Authentication Policy",
+      "description": "## Test the Two Factor Authentication Policy\n\n1. Navigate to http://localhost:8080\n2. Click on `CRM App (Redirect)`\n3. Enter the **Username** `kay.west@oktaice.com` and click `Next`\n4. Enter the **Password** `Tra!nme4321!` and click `Verify`\n5. You are now prompted for a email as a second factor of authentication.\n6. Click `Send me an email`\n7. Click `Enter a verification code instead`\n8. Check your personal email for an email from your Okta Org and copy the numeric code into the `Enter Code` field\n9. Click `Verify` and you will be logged in to the Customer Rewards application!\n10. Click `Close Okta Session`\n11. Click `Return to Portal`\n\n📝 **Note**: In order for the clickable Email Magic Link to work, the link must be clicked in the same device that the authentication process was initiated. Since we're using a VM and you are likely checking your email on a personal device, we circumvent this by using the verification code instead."
     },
     {
       "title": "Lab Checkpoint",

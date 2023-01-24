@@ -1,6 +1,6 @@
 [![Okta Training](./.tour-resources/oktaeduservices.png "Okta Education Services")](https://www.okta.com/services/training/)
 
-# Securing Your Environment With Policies And MFA
+# Securing Your Environment With Sign-On Policies And MFA
 
 This repo contains everything you need to complete the labs in this module:
 
